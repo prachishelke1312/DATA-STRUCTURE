@@ -55,4 +55,54 @@ def menu():
             print("Invalid choice. Please enter a number between 1 and 5.")
 
 # Run the menu
+
 menu()
+
+OUTPUT:
+
+--- EVENT MENU ---
+1. Add Event
+2. Process Next Event
+3. Display Pending Events
+4. Cancel an Event
+5. Exit
+Enter your choice: 1
+Enter event name: 20
+Event '20' added to the queue.
+
+--- EVENT MENU ---
+1. Add Event
+2. Process Next Event
+3. Display Pending Events
+4. Cancel an Event
+5. Exit
+Enter your choice: 2
+Processed event: '20'
+
+--- EVENT MENU ---
+1. Add Event
+2. Process Next Event
+3. Display Pending Events
+4. Cancel an Event
+5. Exit
+Enter your choice: 3
+No pending events.
+
+--- EVENT MENU ---
+1. Add Event
+2. Process Next Event
+3. Display Pending Events
+4. Cancel an Event
+5. Exit
+Enter your choice: 4
+Enter event name to cancel: 20
+Event '20' not found or already processed.
+
+--- EVENT MENU ---
+1. Add Event
+2. Process Next Event
+3. Display Pending Events
+4. Cancel an Event
+5. Exit
+Enter your choice: 5
+Exiting Event Processing System.
