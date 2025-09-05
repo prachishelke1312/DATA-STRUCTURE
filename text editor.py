@@ -1,6 +1,6 @@
 class TextEditor:
 
-    def _init_(self):
+    def __init__(self):   # ✅ Correct constructor
         self.document = ""
         self.undo_stack = []
         self.redo_stack = []
@@ -61,3 +61,68 @@ class TextEditor:
 # Run the editor
 editor = TextEditor()
 editor.run_editor()
+
+OUTPUT:
+--- MENU ---
+1. Make a Change
+2. Undo
+3. Redo
+4. Display Document State
+5. Exit
+Enter your choice: 1
+Enter text to add: hello
+
+Change made.
+Current Document State: 'hello'
+
+--- MENU ---
+1. Make a Change
+2. Undo
+3. Redo
+4. Display Document State
+5. Exit
+Enter your choice: 1
+Enter text to add: world
+
+Change made.
+Current Document State: 'helloworld'
+
+--- MENU ---
+1. Make a Change
+2. Undo
+3. Redo
+4. Display Document State
+5. Exit
+Enter your choice: 2
+
+Undo performed.
+Current Document State: 'hello'
+
+--- MENU ---
+1. Make a Change
+2. Undo
+3. Redo
+4. Display Document State
+5. Exit
+Enter your choice: 3
+
+Redo performed.
+Current Document State: 'helloworld'
+
+--- MENU ---
+1. Make a Change
+2. Undo
+3. Redo
+4. Display Document State
+5. Exit
+Enter your choice: 4
+Current Document State: 'helloworld'
+
+--- MENU ---
+1. Make a Change
+2. Undo
+3. Redo
+4. Display Document State
+5. Exit
+Enter your choice: 5
+Exiting...
