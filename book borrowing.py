@@ -45,4 +45,12 @@ print("Average books borrowed:", average)
 print("Maximum books borrowed by any member:", max_borrow)
 print("Minimum books borrowed by any member (excluding zero):", min_borrow)
 print("Members who borrowed 0 books:", zero_count)
+
 print("Most frequently borrowed count (mode, excluding zero):", mode_borrow)
+
+OUTPUT:
+Average books borrowed: 2.2857142857142856
+Maximum books borrowed by any member: 5
+Minimum books borrowed by any member (excluding zero): 1
+Members who borrowed 0 books: 2
+Most frequently borrowed count (mode, excluding zero): 5
